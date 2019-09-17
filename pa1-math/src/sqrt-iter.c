@@ -13,6 +13,17 @@ int sqrt_iter( int x )
   // Implement this function
   //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-  return x;
+  for (int i=0; i<x; i=i+1)
+  {
+    if ((i*i) > x)
+    {
+      return (i - 1);
+    }
+    else if ((i*i) == x)
+    {
+      return i;
+    }
+  }
+  return 0;
 }
 
